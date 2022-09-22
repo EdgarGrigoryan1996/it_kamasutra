@@ -1,5 +1,4 @@
 import React from 'react'
-import AddPost from '../PostsBlock/AddPosts/AddPost'
 import Post from './Post/Post'
 import s from "./Posts.module.css"
 export default function Posts() {
