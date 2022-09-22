@@ -1,5 +1,5 @@
 import React from 'react'
-
+import s from "./Profile.module.css"
 export default function Profile() {
 	return (
 		<main>
@@ -16,8 +16,8 @@ export default function Profile() {
 				posts
 			</div>
 			<div className="new-posts">
-				<div>post1</div>
-				<div>post2</div>
+				<div className={s.item}>post1</div>
+				<div className={s.item}>post2</div>
 			</div>
 		</main>
 	)
