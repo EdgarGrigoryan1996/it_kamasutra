@@ -1,0 +1,22 @@
+.item{
+	display: inline-block;
+	color:#fff;
+	transition: all 0.2s linear;
+	text-decoration: none;
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 24px;
+}
+.item:hover{
+	color:#ccc;
+}
+.active{
+	color:black;
+}
+.active:hover{
+	color:black;
+}
+nav{
+	background-color: rgb(106, 155, 74);
+	width: 20%;
+}
