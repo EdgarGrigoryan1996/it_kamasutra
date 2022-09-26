@@ -11,3 +11,7 @@
 	display: flex;
 	margin-top: 20px;
 }
+.content-wrapper{
+	background-color: antiquewhite;
+	width: 100%;
+}

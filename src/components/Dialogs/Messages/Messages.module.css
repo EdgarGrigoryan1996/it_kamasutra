@@ -1,0 +1,43 @@
+.messagesBlock{
+    width: 100%;
+}
+
+.message{
+    width: 100%;
+    padding-top: 25px;
+    padding-left: 15px;
+    display:flex;
+    align-items: center;
+
+}
+.userAvatar{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #cccccc;
+}
+.messageBox{
+    position: relative;
+    border-radius: 8px;
+    background-color: white;
+    border:1px solid #ccc;
+    padding: 15px 25px;
+    margin-left: 25px;
+}
+.messageBox::after{
+    content:"";
+    position: absolute;
+    width: 23px;
+    height: 20px;
+    border:1px solid #ccc;
+    background-color: white;
+    border-right: none;
+    border-bottom: none;
+    left:-11px;
+    top:5px;
+    transform: rotate(-45deg);
+}
+.userName{
+    text-align: center;
+    padding-top: 5px;
+}

@@ -1,0 +1,21 @@
+.dialogsItems{
+    width: 30%;
+    border-right: 1px solid cadetblue;
+}
+.dialogItem{
+    padding: 20px 10px;
+    position: relative;
+    color:cadetblue;
+    font-size: 18px;
+}
+.dialogItem::after{
+    content:"";
+    width: 6px;
+    height: 6px;
+    background-color: cadetblue;
+    border-radius: 50%;
+    position: absolute;
+    left:-5px;
+    top:48%;
+
+}
