@@ -1,10 +1,21 @@
 import s from "./DialogsItems.module.css";
+import {NavLink} from "react-router-dom";
+import {dialogsData} from "../DialogsData/dialogsData";
 
-export default function DialogsItems(){
+const DialogItem = ({name,link,className}) => {
+    return (
+        <div className={className}><NavLink to={link}> {name} </NavLink></div>
+    )
+}
+
+export default function DialogsItems() {
     return (
         <div className={s.dialogsItems}>
-            <div className={s.dialogItem}>Edita</div>
-            <div className={s.dialogItem}>Vzgo</div>
+            {dialogsData.map((dialog) => {
+                return (
+                    <DialogItem name={dialog.name} link={'/dialogs/'+dialog.id} className={s.dialogItem}/>
+                )
+            })}
         </div>
-    )
+)
 }

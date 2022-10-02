@@ -2,11 +2,16 @@
     width: 30%;
     border-right: 1px solid cadetblue;
 }
+
 .dialogItem{
     padding: 20px 10px;
     position: relative;
     color:cadetblue;
     font-size: 18px;
+}
+.activeDialog{
+    font-weight: 700;
+    font-size: 22px;
 }
 .dialogItem::after{
     content:"";

@@ -1,0 +1,22 @@
+export const dialogsData = [
+    {
+        id:1,
+        name:"Edita"
+    },
+    {
+        id:2,
+        name:"Vzgo"
+    },
+    {
+        id:3,
+        name:"Damir"
+    },
+    {
+        id:4,
+        name:"Anna"
+    },
+    {
+        id:5,
+        name:"Miqo"
+    },
+]
