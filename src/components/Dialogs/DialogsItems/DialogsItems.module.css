@@ -6,9 +6,10 @@
 .dialogItem{
     padding: 20px 10px;
     position: relative;
-    color:cadetblue;
+    color:#647E68;
     font-size: 18px;
 }
+
 .activeDialog{
     font-weight: 700;
     font-size: 22px;
@@ -17,7 +18,7 @@
     content:"";
     width: 6px;
     height: 6px;
-    background-color: cadetblue;
+    background-color: #647E68;
     border-radius: 50%;
     position: absolute;
     left:-5px;

@@ -1,0 +1,41 @@
+.friends{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.friendBlock{
+    padding: 10px;
+    color:#333;
+    cursor: pointer;
+
+}
+.friendBlock:hover > .friendSmallAvatar{
+    background-color: #94B49F;
+}
+.friendBlock:hover > .friendAvatar{
+    background-color: #94B49F;
+}
+.friendAvatar{
+    transition: all 0.1s ease;
+    width: 100px;
+    height: 100px;
+    background-color: #647E68;
+    border-radius: 50%;
+}
+.friendSmallAvatar{
+    transition: all 0.1s ease;
+    width: 35px;
+    height: 35px;
+    background-color: #DFD3C3;
+    border-radius: 50%;
+}
+.friendName{
+    text-align: center;
+    font-size: 20px;
+
+}
+.friendSmallName{
+    text-align: center;
+    color:#fff;
+    font-size: 14px;
+}

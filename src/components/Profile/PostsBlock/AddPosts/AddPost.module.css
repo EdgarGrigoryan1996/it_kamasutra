@@ -6,7 +6,7 @@
 	outline: none;
 	resize: none;
 	border:none;
-	background-color: rgb(199, 224, 216);
+	background-color: #D8D9CF;
 	border-radius: 5px;
 	padding: 10px;
 }
@@ -15,7 +15,7 @@
 }
 
 .sendButtonBlock button{
-	background-color: green;
+	background-color: #647E68;
 	padding: 10px 20px;
 	cursor: pointer;
 	border:none;
@@ -24,6 +24,6 @@
 	border-radius: 5px;
 }
 .sendButtonBlock button:hover{
-	background-color: rgb(20, 167, 57);
+	background-color: #829460;
 }
 

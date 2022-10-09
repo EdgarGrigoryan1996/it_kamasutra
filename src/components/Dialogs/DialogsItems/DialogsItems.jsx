@@ -1,6 +1,5 @@
 import s from "./DialogsItems.module.css";
 import {NavLink} from "react-router-dom";
-import {dialogsData} from "../DialogsData/dialogsData";
 
 const DialogItem = ({name,link,className}) => {
     return (
@@ -8,14 +7,10 @@ const DialogItem = ({name,link,className}) => {
     )
 }
 
-export default function DialogsItems() {
+export default function DialogsItems({dialogs}) {
     return (
         <div className={s.dialogsItems}>
-            {dialogsData.map((dialog) => {
-                return (
-                    <DialogItem name={dialog.name} link={'/dialogs/'+dialog.id} className={s.dialogItem}/>
-                )
-            })}
+            {dialogs.map(dialog => <DialogItem key={dialog.id} name={dialog.name} link={'/dialogs/'+dialog.id} className={s.dialogItem}/>)}
         </div>
 )
 }

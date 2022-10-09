@@ -7,22 +7,27 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
+import NotFound from "./components/NotFound/NotFound";
+import Friends from "./components/Friends/Friends";
 
 
-function App() {
+function App({state,addPost,addMessage,updatePostText,updateMessageText}) {
     return (
         <BrowserRouter>
             <div className="app-wrapper">
                 <Header/>
                 <div className='nav_content'>
-                    <Navbar/>
+                    <Navbar friends={state.friendsPage.friends}/>
                     <div className="content-wrapper">
                         <Routes>
-                            <Route path="/dialogs/*" element={<Dialogs/>}/>
-                            <Route path="/home" element={<Profile/>}/>
+                            <Route path="/dialogs/*" element={<Dialogs state={state.dialogsPage} addMessage={addMessage} updateMessageText={updateMessageText}/>}/>
+                            <Route path="/home" element={<Profile state={state.profilePage} addPost={addPost} updatePostText={updatePostText}/>}/>
+                            <Route path="/" element={<Profile state={state.profilePage} addPost={addPost} updatePostText={updatePostText}/>}/>
                             <Route path="/news" element={<News/>}/>
                             <Route path="/music" element={<Music/>}/>
                             <Route path="/settings" element={<Settings/>}/>
+                            <Route path="/friends" element={<Friends friends={state.friendsPage.friends}/>}/>
+                            <Route path="*" element={<NotFound/>}/>
                         </Routes>
                     </div>
                 </div>
