@@ -1,0 +1,22 @@
+.profile_img_description{
+	display:flex;
+	align-items:stretch;
+	margin-left: 20px;
+	padding-top: 15px;
+}
+.profile_img_description img{
+	width: 150px;
+}
+.description{
+	margin-left: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.userInfo{
+	padding-top: 15px;
+}
+.profileName{
+	font-size: 28px;
+	font-weight: 700;
+}

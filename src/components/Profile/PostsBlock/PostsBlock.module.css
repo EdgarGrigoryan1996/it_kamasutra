@@ -1,0 +1,10 @@
+.postsBlock{
+	width: 95%;
+	margin: 0 auto;
+}
+
+.posts{
+	padding: 15px 0;
+	font-size: 28px;
+	color:rgb(100, 100, 100);
+}
