@@ -1,0 +1,101 @@
+.userWrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 15px 0;
+  width: 100%;
+}
+
+.title {
+  font-size: 26px;
+  padding: 15px;
+  font-weight: 700;
+  color: #222;
+}
+
+.userImgBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.imgBlock img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* User Info */
+.userInfo {
+  width: 65%;
+  margin-right: 15px;
+}
+
+.userInfoBlock {
+  padding: 15px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.btn {
+  width: 80px;
+  height: 25px;
+  color: #fff;
+  font-size: 18px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+
+.btnDanger:hover {
+  background-color: brown;
+  box-shadow: 2px 1px 6px #a52a2aff;
+}
+
+.btnDanger {
+  background-color: #b64646;
+}
+
+.btnSuccess {
+  background-color: #647e68;
+}
+
+.btnSuccess:hover {
+  background-color: #466b4b;
+  box-shadow: 2px 1px 6px #466b4b;
+}
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+/*Pagination*/
+.currentPage {
+  font-weight: bold;
+  background-color: #466b4b;
+  color: #fff;
+}
+.paginationBlock {
+  display: flex;
+  flex-wrap: wrap;
+}
+.paginationBlock .pagesList {
+  min-width: 30px;
+  min-height: 30px;
+  border: 1px solid #466b4b;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.1s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paginationBlock span:hover {
+  background-color: #466b4b;
+  color: #fff;
+}

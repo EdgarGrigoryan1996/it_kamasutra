@@ -1,0 +1,31 @@
+.addMessage{
+    display: flex;
+    align-items: center;
+}
+.addMessageArea{
+    width: 90%;
+    height: 50px;
+    margin: 25px 15px;
+    outline: none;
+    resize: none;
+    border:none;
+    background-color: #D8D9CF;
+    border-radius: 5px;
+    padding: 10px;
+}
+.sendButtonBlock button{
+    background-color: #647E68;
+    padding: 10px 20px;
+    cursor: pointer;
+    border:none;
+    color:#fff;
+    transition: all 0.2s ease;
+    border-radius: 5px;
+}
+.sendButtonBlock button:hover{
+    background-color:#829460;
+}
+.sendButtonBlock button.disable{
+    cursor: not-allowed;
+    background-color: rgb(200, 200, 200);
+}

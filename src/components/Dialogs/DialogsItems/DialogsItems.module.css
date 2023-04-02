@@ -1,0 +1,27 @@
+.dialogsItems{
+    width: 30%;
+    border-right: 1px solid rgba(100,126,104,0.5);
+}
+
+.dialogItem{
+    padding: 20px 10px;
+    position: relative;
+    color:#647E68;
+    font-size: 18px;
+}
+
+.activeDialog{
+    font-weight: 700;
+    font-size: 22px;
+}
+.dialogItem::after{
+    content:"";
+    width: 6px;
+    height: 6px;
+    background-color: #647E68;
+    border-radius: 50%;
+    position: absolute;
+    left:-5px;
+    top:48%;
+
+}

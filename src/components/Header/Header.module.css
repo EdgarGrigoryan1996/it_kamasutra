@@ -1,0 +1,28 @@
+.header {
+  background-color: #647e68;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header img {
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+button {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+button:hover {
+  background-color: #cccccc;
+}
+.login {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 15px;
+}
